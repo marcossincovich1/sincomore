@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eee;
+  font-family: Arial,"Nimbus Sans L",sans-serif;
+}
+
+.header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav{
+    margin: 30px;
+}
+
+.nav-link{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+
+.nav-link:hover{
+  color: linear-gradient(160deg, #6e5050 0%, #f85b00 100%);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+.slogan{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-left: 300px;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.btn {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 120px;
+    margin-left: 70%;
+    text-transform: uppercase;
+    line-height: 8px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(120deg, #6e5050 0%, #f85b00 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btn > * {
+    display: inline-block;
+    transition: all ease-in-out .5s;
+  }
+  
+  .btn__visible {
+    padding: 1.2rem 3rem;
+    text-align: center;
+  }
+  
+  .btn__invisible {
+    width: 100%;
+    position: absolute;
+    padding: 1.2rem 0;
+    left: 0;
+    top: -100%;
+  }
+  
+  .btn:hover {
+    background-image: linear-gradient(160deg, #6e5050 0%, #f85b00 100%);
+  }
+  
+  .btn:hover .btn__visible {
+    transform: translateY(100%);
+  }
+  
+  .btn:hover .btn__invisible {
+    top: 0;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    .slogan{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+      }
+    }
