@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Registro</h2>
+	<form action="register_handler.php" method="post">
+		<label for="name">Nombre</label>
+		<input type="text" name="name" require><br><br>
+		<label for="username">Usuario:</label>
+		<input type="text" id="username" name="username" required><br><br>
+		<label for="email">Correo electrónico:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		<label for="password">Contraseña:</label>
+		<input type="password" id="password" name="password" required><br><br>
+		<input type="submit" value="Registrarse">
+		<a href="login.html">Iniciar Sesion</a>
+	</form>
+</body>
+</html>
